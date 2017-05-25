@@ -1,0 +1,39 @@
+{
+  "name": "tarotname",
+  "version": "1.0.0",
+  "description": "backend of tarotname",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firatkaradag/tarotname.git"
+  },
+  "keywords": [
+    "tarot",
+    "astroloji",
+    "fal",
+    "kahve",
+    "fortune",
+    "gelecek"
+  ],
+  "author": "firatkaradag",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firatkaradag/tarotname/issues"
+  },
+  "homepage": "https://github.com/firatkaradag/tarotname#readme",
+  "dependencies": {
+    "bunyan-winston-adapter": "^0.2.0",
+    "ecstatic": "^2.1.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.10.2",
+    "mongoose-api-query": "^0.1.1-pre",
+    "mongoose-createdmodified": "0.0.2",
+    "restify": "^4.3.0",
+    "restify-errors": "^4.3.0",
+    "restify-router": "^0.4.2",
+    "winston": "^2.3.1"
+  }
+}
