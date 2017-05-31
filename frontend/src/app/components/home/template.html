@@ -2,8 +2,8 @@
   <h2>Uzman Yorumcularımızdan Birini Seç Hemen Başla</h2>
   <ul>
   	<li class="sibyl" *ngFor='let sibyl of sibyls'>
-  		<img src="{{sibyl.url}}" width="150px" height="90px">
-  		<h3>{{sibyl.name + ' ' + sibyl.surname}}</h3>
+  		<img src="{{sibyl.photoUrl}}" width="150px" height="90px">
+  		<h3>{{sibyl.nickname}}</h3>
   		<p>{{sibyl.description}}</p>
   	</li>
   </ul>

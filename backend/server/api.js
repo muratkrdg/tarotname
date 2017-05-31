@@ -48,6 +48,11 @@ server.use(restify.acceptParser(server.acceptable))
 server.use(restify.queryParser({ mapParams: true }))
 server.use(restify.fullResponse())
 server.use(restify.CORS())
+server.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+})
 
 server.use(ecstatic({ root: __dirname + '/../client' }))
 server.get(/^\/(?!api).*$/, ecstatic({ root: __dirname + '/../client' }));

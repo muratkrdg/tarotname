@@ -5,7 +5,8 @@ import {FORM_PROVIDERS} from '@angular/common';
 
 import '../style/app.scss';
 
-import {Api} from './services/api';         // ./services/api/index.ts
+import {Api} from './services/api';         									// ./services/api/index.ts
+import {SibylService} from './services/api/service.sibyl';   	// ./services/api/service.sibyl.ts
 import routes from './routes';
 
 /*
@@ -14,7 +15,7 @@ import routes from './routes';
  */
 @Component({
     selector: 'app', // <app></app>
-    providers: [...FORM_PROVIDERS, Api],
+    providers: [...FORM_PROVIDERS, Api, SibylService],
     directives: [...ROUTER_DIRECTIVES],
     pipes: [],
     styles: [require('./style.scss')],
