@@ -1,0 +1,35 @@
+<header>
+	<nav class="navbar navbar-inverse">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" [routerLink]="['Home']"><img src="img/logo.png" height="40px" alt="Online Astroloji ve Fal Sitesi"></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse">
+	      <ul class="nav navbar-nav">
+	        <li><a [routerLink]="['About']">Hakkımızda</a></li>
+		  		<li><a [routerLink]="['HowItWorks']">Nasıl Kullanacağım?</a></li>
+		  		<li><a [routerLink]="['Sibyls']">Yorumcular</a></li>
+		  		<li><a [routerLink]="['Products']">Fallar</a></li>
+		  		<li><a [routerLink]="['Media']">Medya</a></li>
+		  		<li><a [routerLink]="['Contact']">İletişim</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+</header>
+<main>
+	<h1>Tüm fiyatlarda İNDİRİM 19.90 tl</h1>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <a href="{{ url }}">®Tarotname - Bütün hakları saklıdır.</a>
+</footer>
